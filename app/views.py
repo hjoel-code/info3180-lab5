@@ -35,6 +35,7 @@ def about():
 @login_required
 def logout():
     logout_user()
+    flash('User Logged Out', 'success')
     return redirect(url_for('home'))
     
 
